@@ -20,3 +20,15 @@ echo "=============================================="
 echo "       Linux Server Health Monitor"
 echo "=============================================="
 echo -e "${NC}"
+HOSTNAME=$(hostname)
+
+echo -e "${GREEN}Hostname:${NC} $HOSTNAME"
+CURRENT_DATE=$(date)
+
+echo -e "${GREEN}Current Time:${NC} $CURRENT_DATE"
+OS=$(uname -s)
+
+echo -e "${GREEN}Operating System:${NC} $OS"
+KERNEL=$(uname -r)
+
+echo -e "${GREEN}Kernel Version:${NC} $KERNEL"
